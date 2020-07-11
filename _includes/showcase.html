@@ -14,7 +14,7 @@
                 <smaller>FRESHLY MINTED</smaller>
             </span><br>
             {{ post.title }}<br>
-            <a href="{{ post.url }}">
+            <a href="{{ site.baseurl }}{{ post.url }}">
                 <button type="button" class="btn btn-default showcase-button">Read More</button>
             </a>
             {% endfor %}
