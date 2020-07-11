@@ -1,6 +1,6 @@
 # Where things are
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 name: Mir
 author: Mir
 description: Blog for mir
