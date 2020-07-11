@@ -9,7 +9,7 @@ categories: poetical works
 
 
 
-![screenshot]{{ site.baseurl }}{{site.md_img_url}}/20200626-01.gif)
+![screenshot]({{ site.baseurl }}{{site.md_img_url}}/20200626-01.gif)
 
 
 
