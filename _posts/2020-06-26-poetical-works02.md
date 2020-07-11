@@ -9,7 +9,7 @@ categories: poetical works
 
 원숙희
 
-![screenshot]({{site.md_img_url}}/20200626-01.jpg)
+![screenshot]({{ site.baseurl }}{{site.md_img_url}}/20200626-01.jpg)
 
 사랑을 받지 못해 서글픈 날에는  
 사랑을 잊지 못해 애달픈 날에는  
