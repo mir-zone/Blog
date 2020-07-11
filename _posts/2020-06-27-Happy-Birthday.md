@@ -5,7 +5,7 @@ date:   2020-06-27 09:00:00
 categories: anniversary
 ---
 
-![img]({{site.md_img_url}}/20200627-01.png "생일 축하합니다.")
+![img]({{ site.baseurl }}{{site.md_img_url}}/20200627-01.png "생일 축하합니다.")
 <br><br><br>
 
 ### 정민C ~~!!!
