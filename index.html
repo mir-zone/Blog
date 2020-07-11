@@ -21,7 +21,7 @@ title: Home
         <li>
             <span>
                 <h5>
-                    <a href="{{ post.url }}">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
                         {{ post.title }}
                     </a>
                     {{ fresh_tag }}
@@ -36,7 +36,7 @@ title: Home
         {% assign fresh_tag = '' %}
     {% endfor %}
     <ul>
-        <a href="/list.html">View More...</a>
+        <a href="{{ site.baseurl }}/list.html">View More...</a>
     </ul>
 </div>
 {% endif %}
