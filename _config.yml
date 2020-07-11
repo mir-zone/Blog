@@ -1,0 +1,75 @@
+# Where things are
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+name: Mir
+author: Mir
+description: Blog for mir
+##title: "" # the name of your site, e.g. ACME Corp.
+##source: .
+##destination: ./_site
+##collections_dir: .
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+img_url: "/assets/img"
+md_img_url: "/assets/md_img"
+sass:
+    sass_dir: _sass
+collections:
+    posts:
+        output: true
+
+github: http://www.github.com/mir-zone
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: rnpatel[at]me.com
+location: 42°2'16"N   70°12'47"W
+disqus: diqus-username
+##Make sure to edit the above fields, especially for disqus.
+
+# Layout setting
+defaults:
+  - scope:
+      path: ""  # 이 빈 문자열은 프로젝트의 모든 파일을 의미 함.
+      type: "pages" # 값은 pages, posts, drafts 또는 사이트 내의 컬렉션 이름을 사용. 
+    values:
+      layout: "default" # 디폴트 레이아웃 설정을 덮어씀
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      anthor: ""
+      category: ""
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+# Conversion
+
+##markdown: redcarpet
+##highlighter: pygments
+##redcarpet:
+##    extensions: [Redcarpet::Markdown] # Redcarpet::Markdown, "tables"
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processors
+rdiscount:
+    extensions: []
+kramdown:
+    auto_ids: true
+    entity_output: as_char
+    toc_levels: [1, 2, 3, 4, 5, 6]
+    smart_quotes: lsquo,rsquo,ldquo,rdquo
+    input: GFM
+    hard_wrap: false
+    footnote_nr: 1
+    show_warnings: false
