@@ -1,0 +1,59 @@
+<!-- start nav-collapse -->
+    <nav class="navbar sticky-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="\"><h1 class="brand">{{ site.name }}</h1></a>
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarsmenu" aria-controls="navbarsmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarsmenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/list.html">List <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/links.html">Links</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">-----------</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">풀다운 메뉴</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a href="#" class="dropdown-item">Action1</a>
+                            <a href="#" class="dropdown-item">Action2</a>
+                            <a href="#" class="dropdown-item">Action3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+<!-- end nav-collapse -->
+
+<!-- start Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="\">
+                    <h1 class="brand">{{ site.name }}</h1>
+                </a>
+                <h3>{{ site.description }}</h3>
+            </li>
+            <hr />
+            <li><a href="/list.html">List</a></li>
+            <li><a href="/links.html">Links</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+            <hr />
+            <div id="social-wrapper">
+                <li> <a href="{{ site.twitter }}"><i class="fab fa-twitter-square"></i> @twitter</a></li>
+                <li> <a href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i> linkedin</a> </li>
+                <li> <a href="{{ site.facebook }}"><i class="fab fa-facebook-square"></i> facebook</a></li>
+                <li> <a href="{{ site.github }}"><i class="fab fa-github-square"></i> github</a> </li>
+            </div>
+        </ul>
+    </div>
+<!-- end Sidebar -->

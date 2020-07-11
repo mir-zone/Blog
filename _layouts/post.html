@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+    <div id="article">
+        <div class="article-title">{{ page.title }}</div>
+        <p class="meta">
+            <small>
+                &nbsp;<i class="fa fa-calendar-day" aria-hidden="true"></i> {{ page.date | date_to_string}}
+            </small>
+        </p>
+        <hr />
+        <div class="post">
+            {{ content }}
+        </div>
+    </div>
+    <!--{% include md-share.html %}-->
+    {% include md-pager.html %}
+    <!--{% include md-comment.html %}-->
