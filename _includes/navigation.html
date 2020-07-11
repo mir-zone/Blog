@@ -1,7 +1,7 @@
 <!-- start nav-collapse -->
     <nav class="navbar sticky-top navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="\"><h1 class="brand">{{ site.name }}</h1></a>
+            <a class="navbar-brand" href="{{ site.baseurl }}"><h1 class="brand">{{ site.name }}</h1></a>
             
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarsmenu" aria-controls="navbarsmenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span>
@@ -37,7 +37,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="\">
+                <a href="{{ site.baseurl }}">
                     <h1 class="brand">{{ site.name }}</h1>
                 </a>
                 <h3>{{ site.description }}</h3>
